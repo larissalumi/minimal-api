@@ -11,7 +11,7 @@ public class DbContexto : DbContext
         _configuracaoAppSettings = configuracaoAppSettings;
     }
     public DbSet<Administrador> Administradores { get; set; } = default!;
-
+    
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if(!optionsBuilder.IsConfigured)
